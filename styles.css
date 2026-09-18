@@ -184,6 +184,25 @@ h3 {
   object-position: center;
 }
 .research-visual.contain img { object-fit: contain; }
+
+@media (min-width: 801px) {
+  #research { padding: 68px 0; }
+  #research .section-heading { margin-bottom: 34px; }
+  #research .research-card {
+    min-height: 0;
+    padding: 26px;
+  }
+  #research .card-index { margin-bottom: 24px; }
+  #research .research-card > p:not(.card-index) {
+    margin-bottom: 0;
+    line-height: 1.5;
+  }
+  #research .research-visual {
+    height: clamp(125px, 15vh, 155px);
+    margin-top: 22px;
+    aspect-ratio: auto;
+  }
+}
 .work-list article {
   display: grid;
   grid-template-columns: 1fr 1.4fr;
